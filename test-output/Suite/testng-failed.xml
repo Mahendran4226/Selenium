@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="10">
+  <listeners>
+    <listener class-name="actions.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="10">
+    <classes>
+      <class name="TestExecution.LoginNegativeTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="teardown"/>
+          <include name="login_Negative_Test" invocation-numbers="3"/>
+        </methods>
+      </class> <!-- TestExecution.LoginNegativeTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
